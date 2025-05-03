@@ -12,7 +12,7 @@
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
     "importHelpers": true,
-    "module": "ESNext",
+    "module": "NodeNext",
     "moduleResolution": "nodenext",
     "noEmitHelpers": false,
     "noFallthroughCasesInSwitch": true,
