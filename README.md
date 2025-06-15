@@ -1,6 +1,6 @@
 # NodeJS Typescript Starter
 
-![Build Status](https://github.com/ckir/ts_template/actions/workflows/ci.yml/badge.svg)
+![Build Status](https://github.com/ckir/ts_template/actions/workflows/ci.yml/badge.svg) [![Known Vulnerabilities](https://snyk.io/test/github/ckir/ts_template/badge.svg)](https://snyk.io/test/github/ckir/ts_template)
 
 To create a starter
 
