@@ -1,42 +1,43 @@
 {
-  "compilerOptions": {
-    "allowJs": true,
-    "allowSyntheticDefaultImports": true,
-    "alwaysStrict": true,
-    "baseUrl": ".",
-    "checkJs": false,
-    "composite": true,
-    "declaration": true,
-    "emitDecoratorMetadata": true,
-    "esModuleInterop": true,
-    "experimentalDecorators": true,
-    "forceConsistentCasingInFileNames": true,
-    "importHelpers": true,
-    "module": "NodeNext",
-    "moduleResolution": "nodenext",
-    "noEmitHelpers": false,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitAny": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-    "outDir": "dist",
-    "removeComments": false,
-    "resolveJsonModule": true,
-    "rootDir": "src",
-    "skipLibCheck": true,
-    "sourceMap": true,
-    "strict": true,
-    "strictFunctionTypes": true,
-    "strictNullChecks": true,
-    "target": "ESNext"
-  },
-  "exclude": [
-    "dist",
-    "node_modules"
-  ],
-  "include": [
-    "src"
-  ]
+    "compilerOptions": {
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+        "alwaysStrict": true,
+        "baseUrl": ".",
+        "checkJs": false,
+        "composite": true,
+        "declaration": true,
+        "emitDecoratorMetadata": true,
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "forceConsistentCasingInFileNames": true,
+        "importHelpers": true,
+        "isolatedModules": true,
+        "module": "NodeNext",
+        "moduleResolution": "nodenext",
+        "noEmitHelpers": false,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+        "outDir": "dist",
+        "removeComments": false,
+        "resolveJsonModule": true,
+        "rootDir": "src",
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "strict": true,
+        "strictFunctionTypes": true,
+        "strictNullChecks": true,
+        "target": "ESNext"
+    },
+    "exclude": [
+        "dist",
+        "node_modules"
+    ],
+    "include": [
+        "src"
+    ]
 }
