@@ -1,6 +1,9 @@
 # NodeJS Starter Project
 
-Fork this repo to create a starter
+To create a starter
+
+Clone this repo and then delete the .git to create a fork
+or download the zip
 
 <!-- Before copying this remember:
 
@@ -11,4 +14,4 @@ rm -Rf .git      # To make the copy standalone
 or copy ts_template
 from template_internals to ~/.local/bin/ for convinience
  -->
- 2
+
