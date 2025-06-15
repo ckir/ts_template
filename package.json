@@ -1,5 +1,9 @@
 {
   "name": "ts_template",
+  "description": "Project bootstrapped using [NodeJS Starter ToolKit](https://github.com/vitorsalgado/create-nodejs-ts). Visit the repository for more details.",
+  "version": "1.0.2",
+  "author": "Costas Kirgoussios",
+  "license": "MIT",
   "type": "module",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
@@ -48,9 +52,5 @@
     "ts-jest": "29.4.0",
     "ts-node": "10.9.2",
     "typescript": "5.8.3"
-  },
-  "description": "Project bootstrapped using [NodeJS Starter ToolKit](https://github.com/vitorsalgado/create-nodejs-ts).   Visit the repository for more details.",
-  "version": "1.0.2",
-  "author": "Costas Kirgoussios",
-  "license": "MIT"
+  }
 }
