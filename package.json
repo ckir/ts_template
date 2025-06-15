@@ -50,7 +50,7 @@
     "typescript": "5.8.3"
   },
   "description": "Project bootstrapped using [NodeJS Starter ToolKit](https://github.com/vitorsalgado/create-nodejs-ts).   Visit the repository for more details.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Costas Kirgoussios",
   "license": "MIT"
 }
