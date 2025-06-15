@@ -1,0 +1,45 @@
+name: Bump Patch Version on Push
+
+on:
+  push:
+    branches:
+      - main  # Change this if your default branch is different
+
+jobs:
+  bump-version:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write  # Give the workflow permission to push to the repository
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Bump Patch version in package.json
+        run: npm version patch --no-git-tag-version
+
+      - name: Configure git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit changes
+        run: |
+          git add package.json package-lock.json || true
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: bump patch version [skip ci]"
+          else
+            echo "No changes to commit."
+          fi
+
+      - name: Push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git push origin HEAD:${GITHUB_REF##*/}

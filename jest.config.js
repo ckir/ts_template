@@ -15,12 +15,18 @@ export default {
   moduleNameMapper: {
     '^(\\.{1,2}/.*)\\.js$': '$1',
   },
-  globals: {
-    'ts-jest': {
+  transform: {
+    '^.+\\.tsx?$': ['ts-jest', {
       tsconfig: './tsconfig.test.json',
       useESM: true,
-    },
+    }], // Use ts-jest to transform TypeScript files
   },
+  // globals: {
+  //   'ts-jest': {
+  //     tsconfig: './tsconfig.test.json',
+  //     useESM: true,
+  //   },
+  // },
   collectCoverageFrom: ['<rootDir>/src/*.ts'],
   coveragePathIgnorePatterns: ['<rootDir>/dist/', '/node_modules/', '<rootDir>/scripts', '<rootDir>/tools'],
   coverageProvider: 'v8',
