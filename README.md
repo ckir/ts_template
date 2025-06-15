@@ -1,4 +1,6 @@
-# NodeJS Starter Project
+# NodeJS Typescript Starter
+
+[![Build Status](https://github.com/ckir/ts_template/actions/workflows/<workflow_file>.yml/badge.svg)](https://github.com/ckir/ts_template/actions)
 
 To create a starter
 
