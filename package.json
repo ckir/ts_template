@@ -1,7 +1,7 @@
 {
   "name": "ts_template",
   "description": "Project bootstrapped using [NodeJS Starter ToolKit](https://github.com/vitorsalgado/create-nodejs-ts). Visit the repository for more details.",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "author": "Costas Kirgoussios",
   "license": "MIT",
   "type": "module",
