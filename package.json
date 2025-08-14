@@ -62,7 +62,7 @@
     "stream-http": "^3.2.0",
     "supertest": "7.1.4",
     "terser-webpack-plugin": "^5.3.14",
-    "ts-jest": "29.4.0",
+    "ts-jest": "29.4.1",
     "ts-loader": "^9.5.2",
     "ts-node": "10.9.2",
     "typescript": "5.8.3",
