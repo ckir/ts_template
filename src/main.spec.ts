@@ -23,9 +23,9 @@ describe('Example Test', function () {
     process.env.PORT = '0'
 
     const dir = dirname(fileURLToPath(import.meta.url))
-    const index = Path.resolve(dir, 'index.ts')
-    const tsNodeExe = process.platform === 'win32' ? './node_modules/.bin/ts-node.cmd' : './node_modules/.bin/ts-node'
-    const proc = await spawn(tsNodeExe, [index])
+    const index = Path.resolve(dir, 'main.ts')
+    // spawn node with ts-node ESM loader to execute TypeScript in ESM environment
+    const proc = spawn(process.execPath, ['--loader', 'ts-node/esm', index], { stdio: 'ignore' })
 
     expect(proc.pid).toBeDefined()
 
